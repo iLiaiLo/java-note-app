@@ -1,0 +1,12 @@
+server:
+  port: {env.port}
+
+spring:
+  datasource:
+    url: "{env.url}"
+    username: "{env.username}"
+    password: "{env.password}"
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: db/changelog/db.changelog-master.yaml
+    default-schema: notes
